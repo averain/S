@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=" Выйдя из метро на станции Чхунмуро, вы окажетесь прямо перед корейской традиционной деревней Намсанголь. «Интересно найти такого рода место среди современных высотных зданий», - подумаете вы. В этой деревне находятся пять восстановленных традиционных корейских домов, а также павильон, временная капсула и пруд, которые делают это место идеальным для прогулок.
+Если вы войдете в главные ворота, то увидите ущелье и Чхонугак слева от пруда. Возле пруда находится место, где проводятся представления. В стороне вы увидите пять традиционных домов, которые были построены по типу традиционных домов династии Чосон и также олицетворяют традиционное жилище представителей различных социальных уровней от обычного крестьянина до короля. Здесь хорошо демонстрируется мебель и внутреннее убранство домов, соответствующее статусу хозяина, что помогает посетителям получить представление о повседневной жизни людей в прошлом. Аккуратные традиционные дома и домашние принадлежности являются хорошим материалом для фотоснимков. Если вы желаете приобрести себе что-то на память, загляните на выставку традиционных ремесел, где продается различная посуда и сувениры. Здесь вы сможете попробовать традиционный чай или другие напитки. В деревне можно поиграть в традиционные игры, такие как «нольттвиги» (прыжки на качелях), «тухо» (метание стрел) и «юннори» (традиционная игра с подбрасыванием деревянных палочек-ют). Не пропустите традиционную свадебную церемонию. По выходным традиционные свадьбы показываются в доме Пак Ён Хё). Традиционная свадьба – это интересное мероприятие как для иностранцев, так и для корейцев, поэтому сюда всегда приходит много людей, чтобы увидеть это увлекательное зрелище. В холодную погоду с ноября по февраль свадеб не так много, чаще они проходят весной и осенью. Обычно свадьбы проводятся днем в 12 или 13 часов. Иностранцы могут сфотографироваться с женихом и невестой, одетыми в традиционные свадебные наряды. Здесь также находится временная капсула в память о 600-летней годовщине Сеула. Она была зарыта в 1994 году и должна быть открыта через 400 лет.
+
+"
+        android:id="@+id/textView"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"/>
+    </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@mipmap/kor"
+        android:adjustViewBounds="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="300dp"
+        android:scaleType="fitXY"
+       />  <com.google.android.gms.ads.AdView
+    android:id="@+id/adView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    ads:adSize="BANNER"
+    ads:adUnitId="@string/banner_ad_unit_id">
+</com.google.android.gms.ads.AdView>
+</RelativeLayout>

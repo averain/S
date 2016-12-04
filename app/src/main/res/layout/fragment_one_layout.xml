@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Национальный этнографический музей отражает древний стиль жизни корейцев.
+ Здесь имеется 20.000 остатков древней культуры и 4000 фольклорных реликвий. В центральном зале расположены традиционные культурные выставки или выставки, относящиеся к фольклору.
+  «Зал корейского стиля жизни» показывает стили жизни корейцев от доисторических времен до периода Чосон (1392-1910 гг.).
+  Вы можете сравнить культурные характеристики и остатки периодов, увидеть развитие поэзии, сельско-хозяйственных орудий и печати.
+ 2-я выставка, называемая «Зал корейцев в работе», представляет инструменты для сельского хозяйства, охоты, рыболовства, наряду с одеждой жилыми помещениями.
+  Она включает ручное ремесло, аксессуары, посуду, кимчхи и Чандокдэ.
+ 3-я выставка, называемая «Зал цикла корейской жизни», представляет жизнь корейцев, живших в древности, от рождения до вступления в брак и до смерти.
+ Снаружи музей более интересен, чем изнутри. Скульптуры Тольхарубан с острова Чечжу, ветряная мельница, мельница-ступка и ангар выставлены снаружи.Первое воскресенье каждого месяца здесь объявляется «День посещения музея» с бесплатным входом."
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="350dp"
+       />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:src="@mipmap/h"
+            android:layout_marginBottom="300dp"
+            android:scaleType="fitXY"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+android:id="@+id/adView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_centerHorizontal="true"
+android:layout_alignParentBottom="true"
+ads:adSize="BANNER"
+ads:adUnitId="@string/banner_ad_unit_id">
+</com.google.android.gms.ads.AdView>
+</RelativeLayout>
+
+
+
+

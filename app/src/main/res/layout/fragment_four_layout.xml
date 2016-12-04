@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text=" Длина песчаного берега пляжа Хачжодэ, тянущегося от храма Наксанса на юг, достигает 1,5 км., а глубина побережья составляет 0,5 - 1,5 м. Это место находится в 13 км. к югу от уезда Яньян-гун и в 1 км. к северу от 38 параллели. Перед морской полосой пляжа растёт сосновый лес, а если проехать от въезда на пляж вдоль береговой линии полтора километра, можно увидеть беседку, построенную прямо на скале у моря. В этом месте, называемом «Юкгагый Хачжодэ», скрывались и провели последние годы жизни чиновники Ха Рюн (1347~1416) и Чо Чун (1346~1405), которые имели заслуги в основании государства Чосон (1392~1910).
+Пляж Хачжодэ, открывшийся впервые в 1976 году, привлекает туристов пологим и неглубоким берегом. Здесь можно не только купаться, но и устраивать кэмпинг. Недалеко от пляжа расположены горячие источники Осэк Ончхон, минеральные источники Осэк Яксу, храм Наксанса, Национальный парк гор Сораксан, Национальный парк гор Одэсан, смотровая вышка Объединения, маяк Хачжо и другие достопримечательности. Напротив пляжа стоит каменная плита, указывающая, что через это место проходит 38 параллель. Справа от пляжа течёт речка, а к югу от него возвышаются причудливые скалы и каменные островки, на которых удобно заниматься рыбалкой. Если посмотреть с этого места в правую сторону, можно увидеть остров Чодо. Слева от пляжа стоит белый маяк, поднявшись на который, можно обхватить взглядом все окрестные достопримечательности."
+android:id="@+id/textView"
+android:layout_marginBottom="100dp"
+android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+android:layout_alignParentBottom="true"
+android:layout_centerHorizontal="true"
+    android:layout_marginTop="350dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@mipmap/e"
+        android:adjustViewBounds="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="300dp"
+        android:scaleType="fitXY"
+       />  <com.google.android.gms.ads.AdView
+    android:id="@+id/adView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    ads:adSize="BANNER"
+    ads:adUnitId="@string/banner_ad_unit_id">
+</com.google.android.gms.ads.AdView>
+</RelativeLayout>

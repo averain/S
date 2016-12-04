@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="  Дворец Токсугун расположен в самом центре Сеула и известен своими аккуратно выложенными каменными дорожками. Это единственный дворец, внутри которого построены здания в западном стиле, что придает его внешнему облику значительную уникальность. Изначально дворец принадлежал принцу Вольсану (1454-1488 гг.), старшему брату короля Сончжона (1469-1494 гг.) династии Чосон. В 1611 г. император Кванхэгун (1575-1641 гг.) переименовал дворец в Кёнъюнгун, но позднее название снова изменили на Токсугун.
+Войдите во дворец и увидите там павильон Тэханмунчжон и мост Кымчхон, который настолько широк, что по нему могла проехать королевская повозка. Далее возвышается павильон Попчон Чунхвачжон, который хранит в себе богатую историю. Павильон Чикчодан получил свое название благодаря тому, что именно здесь императоры Кванхэгун и Инчжо взошли на престол. Надпись на переднем фасаде Чикчодан была сделана лично императором Кочжоном в 1905 году после того, как он пришел к власти.
+Павильон Хамнёнчжон был опочивальней императора Кочжона. В восточном крыле были покои короля, в западном – покои королевы. Чонгванхон было первым зданием в западном стиле, построенным во дворце в 1900 году. Император Кочжон любил проводить здесь время. Сокчончжон – это другое здание, построенное в западном стиле, которое сохранилось до настоящего времени. Его строительство началось в 1900 году и заверишилось в 1910 году, будучи уже собственностью японских колонизаторов. После смерти императора Кочжона Сокчончжон стал японской художественной галереей, а после провозглашения Независимости Кореи в этом здании проходили совместные русско-американские переговоры в мае 1946 года. Восточное крыло здания Сокчончжон в настоящее время служит для выставки дворцовых сокровищ, и западное крыло используется как часть Национального центра современного искусства."
+        android:id="@+id/textView"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"/>
+         />
+    </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@mipmap/wa"
+        android:adjustViewBounds="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="300dp"
+        android:scaleType="fitXY"
+       />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

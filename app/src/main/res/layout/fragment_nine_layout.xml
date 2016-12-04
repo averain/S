@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="  Самый высокий пик острова Удо. Внешний вид острова Удо называют похожим на вид лежащей коровой, которая подняла голову, поэтому пик Удобон («пик острова Удо») также часто называют Удубон («пик головы коровы»). Поднявшись на вершину, вы сможете насладиться прекрасными пейзажами острова Удо, и, кроме того, издалека видно возвышающиеся горы Халласан, пик Восхода солнца Сонсан ильчхульбон.
+Также на вершине находится маяк Удо, откуда световой сигнал безлюдного маяка был впервые обнаружен в марте 1906 года, а уже к 1959 году маяк стал обслуживаться персоналом. На этом месте построили парк, и многие туристы приезжают сюда, чтобы оказаться в месте съемок таких знаменитых фильмов как «Дом у озера» ((시월애), Siworae), «Сейчас и навсегда» ((연리지, Now and Forever), «Русалка» ((인어공주), Mermaid) и другие.
+☞ Адрес: Чечжудо, г. Чечжу, Удомён, Ёнпхённи (제주도 제주시 우도면 연평리)
+☞ Время в пути: примерно 5 минут пешком от пляжа Коммолле до прогулочной дорожки пика Удобон (от входа до маяка Удо примерно 20 минут пешком)"
+        android:id="@+id/textView"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@mipmap/je"
+        android:adjustViewBounds="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="300dp"
+        android:scaleType="fitXY"
+
+        />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

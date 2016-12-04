@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Кухня и рестораны Пусана
+Главный предмет гордости пусанских «шефов» — масса блюд из рыбы и морепродуктов. В числе местных специалитетов — густой суп из трески с овощами «дэгутан», который принято поглощать в ресторанах «альма-матер» — пляжного района Хэундэгу. Также стоит попробовать местный вариант японской рыбы фугу, приготовляемый также в виде супа, который называется «бокгук». Заведения, где подают ядовитую тварь, отмечены вывеской с изображением надутой, как воздушный шар, колючей рыбы. Ну а в качестве пляжного перекуса подойдут блины с морепродуктами и зеленым луком «доннэ».
+
+Пусан славится блюдами из сырой рыбы — аналогом японских суши. Лучших рестораны этой специализации располагаются в многоэтажном Millak Town Raw Fish Center на пляже Кваналли. Продукты здесь не просто свежие, а порой живые — не удивляйтесь, увидев в тарелке шевелящегося осьминога.
+
+5 вещей, которые нужно сделать в Пусане
+Отведать суп из местного аналога ядовитой рыбы-фугу (яда не меньше, чем в японской!).
+Подняться на 118-метровую Башню Пусана и полюбоваться на окрестности.
+Провести день на знаменитом на всю страну пляже Хэундэ.
+Еще один день посвятить посещению крупнейшего буддийского храма Помоса.
+Подивиться разнообразию морских гадов на колоритном рыбном рынке Чакалчи."
+        android:id="@+id/textView"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"/>
+         />
+
+    </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@mipmap/s"
+        android:adjustViewBounds="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="300dp"
+        android:scaleType="fitXY"
+       />  <com.google.android.gms.ads.AdView
+    android:id="@+id/adView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    ads:adSize="BANNER"
+    ads:adUnitId="@string/banner_ad_unit_id">
+</com.google.android.gms.ads.AdView>
+</RelativeLayout>

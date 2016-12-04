@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="
+Если обратить свой взор в сторону моря с пляжа Хэундэ, то с правой стороны в конце песчаного побережья вы заметите 'Chosun Beach Hotel'.
+  За зданием отеля раскинулся красивый остров Тонбэксом
+В прошлом это действительно был остров, но со временем под воздействием различных нагромождений он слился с линией суши.
+ В настоящее время это место до сих пор называют островом Тонбэксом, что очередной раз подчёркивает особенности рельефа данной местности.
+
+На территории острова Тонбэксом проложена дорожка,  по которой часто совершают прогулку местные жители. Здесь повсеместно сохранены следы событий прошлого и настоящего такие, как памятник известному учёному и писателю Чве Чхи Вон, статуя русалки (главный персонаж легенды о принцессе топазов), здание Нури Мару (APEC House). Особенно впечатляет великолепный вид, который открывается с острова Тонбэксом на город Пусан. Отдыхающие смогут насладиться красотой холма для любования восходом луны и береговой линии гавани Мипхо на противоположной стороне, моста Кваннан Тэгё, визуально разделяющего море и небо, а также острова Орюкдо, символизирующего море Пусана.
+        "
+        android:id="@+id/textView"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginTop="350dp"
+        />
+    </LinearLayout>
+    </ScrollView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@mipmap/df"
+        android:adjustViewBounds="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="300dp"
+        android:scaleType="fitXY"
+       />  <com.google.android.gms.ads.AdView
+    android:id="@+id/adView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    ads:adSize="BANNER"
+    ads:adUnitId="@string/banner_ad_unit_id">
+</com.google.android.gms.ads.AdView>
+</RelativeLayout>
